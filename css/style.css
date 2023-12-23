@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #f7ecde;
+}
+
+.title h1{
+    font-family: 'Pacifico', cursive;
+    font-weight: 700;
+    position: relative;
+}
+.title h1::before{
+    content: '';
+    position: absolute;
+    width: 225px;
+    height: 20px;
+    background-color: #fec260;
+    bottom: 0;
+    z-index: -1;
+}
+
+h4{
+    font-size: 25px;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: fit-content;
+}
+.form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #d99c39;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem #fec26055;
+  }

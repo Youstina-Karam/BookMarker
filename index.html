@@ -1,0 +1,47 @@
+<html>
+<head>
+    <title>Bookmark</title>
+    <link rel="icon" href="bookmark.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/sweetalert2/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container mt-5  d-flex flex-column align-items-center">
+        <div class="title  text-center pb-4">
+            <h1>Book Marker</h1>
+            <h4 class="pt-3"><i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites <i class="fa-solid fa-bookmark"></i></h4>
+        </div>
+        <label class="fw-semibold mb-3 w-100">
+            <i class="fa-solid fa-book-bookmark pe-3"></i>Site Name
+        </label>
+        <input type="text" placeholder="Bookmark Name" class="form-control mb-3" id="bookmarkName" />
+        <label class="fw-semibold mb-2 w-100">
+            <i class="fa-solid fa-link pe-2"></i>Site URL
+        </label>
+        <input type="url" placeholder="Website URL" class="form-control mb-3" id="bookmarkURL" />
+
+        <button class="btn btn-warning px-5 fw-bold" id="submitBtn">Submit</button>
+
+        <table class="table text-center my-5">
+            <thead>
+                <th>Index</th>
+                <th>Website Name</th>
+                <th>Visit</th>
+                <th>Delete</th>
+            </thead>
+            <tbody id="tbodyId">
+            </tbody>
+        </table>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
